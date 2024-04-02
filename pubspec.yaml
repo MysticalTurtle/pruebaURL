@@ -1,0 +1,73 @@
+name: pokedex
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  loading_animation_widget: ^1.2.0+4
+  dartz: ^0.10.1
+  meta: ^1.10.0
+  get_it: ^7.6.4
+  http: ^1.1.2
+  shared_preferences: ^2.2.2
+  dio: ^5.4.2+1
+  provider: ^6.1.2
+  # hive: ^2.2.3
+  # hive_flutter: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_native_splash: ^2.3.6
+  flutter_launcher_icons: ^0.13.1
+
+
+flutter_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  adaptive_icon_background: #ffffff
+  image_path_ios: "assets/launcher/icono.jpg"
+  image_path_android: "assets/launcher/icono.jpg"
+
+
+flutter_native_splash:
+  background_image: "assets/launcher/splash.jpg"
+  android_screen_orientation: portrait
+  fullscreen: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/launcher/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/poppins/Poppins-Bold.ttf
+          weight: 700
+        
+        - asset: assets/fonts/poppins/Poppins-SemiBold.ttf
+          weight: 600
+        
+        - asset: assets/fonts/poppins/Poppins-Medium.ttf
+          weight: 500
+        
+        - asset: assets/fonts/poppins/Poppins-Regular.ttf
+          weight: 400
+        
+        - asset: assets/fonts/poppins/Poppins-Light.ttf
+          weight: 300
+
+
+# flutter pub run flutter_launcher_icons:main
+# dart run flutter_native_splash:create
